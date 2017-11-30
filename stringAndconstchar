@@ -9,3 +9,10 @@ int main() {
 
     return 0;  
 } 
+
+string s="1234";
+c = s.c_str(); //c最后指向的内容是垃圾，因为s对象被析构，其内容被处理
+//应该这样用：
+char c[20];
+string s="1234";
+strcpy(c,s.c_str());
