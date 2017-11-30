@@ -1,0 +1,11 @@
+#include <iostream>  
+#include <string>  
+int main() {  
+    std::string s = "Chelse";  
+    const char *str = s.c_str();  
+    std::cout << str << std::endl;  
+    s[1] = 'm';  
+    std::cout << str << std::endl;  
+
+    return 0;  
+} 
